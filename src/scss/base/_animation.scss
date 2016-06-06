@@ -1,0 +1,72 @@
+/* --------------------------
+  Keyframes
+--------------------------- */
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-it {
+  0% {
+    fill: transparent;
+  }
+}
+
+@keyframes stroke-off {
+  100% {
+    stroke-opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hr {
+  0% {
+    width: 0;
+  }
+}
+
+@keyframes spin {
+
+  100%  {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* --------------------------
+  Style
+--------------------------- */
+
+.stroke-anim {
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-dasharray: 680;
+  stroke-dashoffset: 680;
+
+  animation: offset 1.5s linear forwards, stroke-off .8s 1.5s forwards;
+}
+
+.fill-anim {
+  animation: fill-it .8s 1.5s backwards;
+}
+
+.text-anim {
+  animation: fade-in .8s 1.5s forwards;
+}
+
+hr {
+  animation: hr .8s 2.3s backwards;
+}
+
+.logo:hover {
+  animation: spin 0.8s ease-in-out;
+  cursor: pointer;
+}

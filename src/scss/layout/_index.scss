@@ -1,0 +1,84 @@
+// @source http://smacss.com/book/type-layout
+//
+// Layout Rules
+//
+// Layout styles can also be divided into major and minor styles based on
+// reuse. Major layout styles such as header and footer are traditionally
+// styled using ID selectors but take the time to think about the elements
+// that are common across all components of the page and use class selectors
+// where appropriate.
+
+.coming-soon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url(../img/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  padding: 0 4px;
+
+  .dark {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    background: $black;
+    z-index: 1000;
+    // transition: all .5s ease-in-out;
+  }
+
+  .logo {
+    margin-bottom: 48px;
+  }
+
+  .text {
+    opacity: 0;
+  }
+
+  h1 {
+    margin: 0 0 32px 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 1.6;
+  }
+
+  hr {
+    width: 127px;
+    border: 0;
+    height: 4px;
+    background: $white;
+    margin: 0 auto 64px auto;
+  }
+
+  p {
+    font-size: 31px;
+  }
+
+  @media only screen and (max-width: 480px) {
+
+    .logo {
+      width: 160px;
+      height: 160px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    hr {
+      margin-bottom: 48px;
+      width: 108px;
+      height: 2px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+  }
+
+}
