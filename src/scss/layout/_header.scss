@@ -68,5 +68,24 @@ header {
     width: 100%;
     text-indent: 100%;
     white-space: nowrap;
+    transform: translateY(-8px);
+
+    &:before, &:after {
+      transition: all .2s;
+    }
+  }
+}
+
+.read-more:hover {
+  .arrow {
+    transform: translateY(0);
+  }
+
+
+  .arrow:before {
+    transform: rotate(60deg);
+  }
+  .arrow:after {
+    transform: rotate(-60deg);
   }
 }

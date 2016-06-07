@@ -1,0 +1,40 @@
+.about {
+  text-align: center;
+  padding-bottom: 48px;
+
+  .wrap {
+    max-width: 960px;
+  }
+
+  h2 {
+    margin-top: 48px;
+  }
+
+  p {
+    margin-top: 32px;
+    padding: 0 24px;
+
+    &:last-of-type {
+      margin-top: 0;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 32px;
+
+    li {
+      display: inline-block;
+      margin-right: 16px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+  }
+}
