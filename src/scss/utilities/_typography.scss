@@ -50,7 +50,9 @@ $font-family-sans-fallback:   'Arial', sans-serif;
 // $font-family-sans - {list}
 // @requires - `$font-family-sans-fallback`
 
-$font-family-sans:            'Open Sans', 'Helvetica', $font-family-sans-fallback;
+$font-family-sans:            'Roboto', 'Helvetica', $font-family-sans-fallback;
+
+$font-family-cursive: 'Comfortaa', cursive;
 
 // $font-family-serif
 //

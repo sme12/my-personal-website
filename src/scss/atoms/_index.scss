@@ -7,3 +7,105 @@
 // that can’t be broken down any further without ceasing to be functional.
 //
 // @source - http://atomicdesign.bradfrost.com/chapter-2/
+
+
+/* Line Devider
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.line {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background-color: $color-primary;
+  border-radius: 4px;
+
+  @media screen and (min-width: 480px) {
+    width: 80px;
+    height: 4px;
+  }
+}
+
+/* Arrow
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.arrow {
+  position: relative;
+  margin-top: 24px;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    border-radius: 2px;
+    background-color: $white;
+  }
+
+  &:before {
+    right: calc(50% - 1px);
+    transform-origin: right;
+    transform: rotate(45deg);
+  }
+  &:after {
+    left: calc(50% - 1px);
+    transform-origin: left;
+    transform: rotate(-45deg);
+  }
+}
+
+/* Toggle button
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.hamb {
+  width: 40px;
+  height: 32px;
+  padding-top: 24px;
+  cursor: pointer;
+
+  span:after,
+  span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+  }
+
+  span:after{
+    top: 10px;
+  }
+
+  span {
+    position: relative;
+    display: block;
+    margin-top: 14px
+  }
+
+  span,
+  span:after,
+  span:before {
+    width: 100%;
+    height: 4px;
+    background-color: $white;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+  }
+
+}
+
+
+  /* on activation */
+
+
+  .hamb.is-open {
+    span {
+      background-color: transparent;
+    }
+    span:before {
+      transform: rotate(45deg) translate(7px, 7px);
+    }
+    span:after {
+      transform: rotate(-45deg) translate(7px, -6px);
+    }
+  }
