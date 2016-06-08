@@ -10,7 +10,7 @@ header {
   background-size: cover;
   text-align: center;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 800px) {
     text-align: left;
   }
 
@@ -22,7 +22,7 @@ header {
     color: $color-primary;
     margin-top: 80px;
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 800px) {
       margin-top: 16px;
     }
   }
@@ -31,7 +31,7 @@ header {
     margin-top: 32px;
     color: $white;
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 800px) {
       margin-top: 48px;
     }
   }
@@ -47,7 +47,7 @@ header {
   left: calc(50% - 20px);
   z-index: 2;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 800px) {
     padding-left: 24px;
     top: 0;
     left: 0;

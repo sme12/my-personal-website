@@ -26,9 +26,18 @@ a {
   color: $color-link;
   text-decoration: none;
   transition: color .2s;
+  border-bottom: 1px dotted;
+
+  &.no-underline {
+    border-bottom: 0;
+  }
 
   &:focus {
     outline: 0;
+  }
+
+  &:hover {
+    color: scale-color($color-primary, $lightness: -15%);
   }
 }
 
@@ -90,6 +99,7 @@ ul {
 .wrap {
   margin: 0 auto;
   max-width: 1024px;
+  padding: 0 16px;
 }
 
 .weak {

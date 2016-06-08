@@ -1,0 +1,80 @@
+footer {
+  background-color: $dark-gray;
+  text-align: center;
+  padding: 48px 0;
+  color: $white;
+
+  @media screen and (min-width: 800px) {
+      text-align: left;
+  }
+
+
+  .role, .person {
+    margin-bottom: 8px;
+    display: block;
+
+    @media screen and (min-width: 800px) {
+      display: inline-block;
+    }
+  }
+
+  .role {
+    color: $color-primary;
+  }
+
+  .person {
+    color: $white;
+  }
+
+  ul.socials-footer {
+    list-style: none;
+    padding: 0;
+    margin: 32px 0;
+
+    @media screen and (min-width: 800px) {
+      text-align: left;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 16px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+  }
+
+  a.email,
+  a.fork {
+    color: $white;
+    display: block;
+    margin: 8px auto;
+  }
+
+  .email:before,
+  .fork:before {
+    content:url('../img/envelope.svg');
+    position: relative;
+    left: -8px;
+  }
+
+  .email:before {
+    content:url('../img/envelope.svg');
+  }
+
+  .fork:before {
+    content:url('../img/gitcat.svg');
+  }
+
+  .copy {
+    display: block;
+    margin-top: 64px;
+  }
+
+
+}

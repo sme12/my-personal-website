@@ -9,6 +9,34 @@
 // @source - http://atomicdesign.bradfrost.com/chapter-2/
 
 
+/* Button
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button {
+  display: inline-block;
+  background-color: $color-primary;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 300px;
+  padding: 16px 48px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+  &:hover {
+    background: scale-color($color-primary, $lightness: -15%);
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.3);
+    transform: translate3d(0, -2px, 0);
+  }
+
+  @media screen and (min-width: 480px) {
+      font-size: 20px;
+  }
+
+}
+
 /* Line Devider
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
