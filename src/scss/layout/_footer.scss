@@ -6,6 +6,10 @@ footer {
 
   @media screen and (min-width: 800px) {
       text-align: left;
+
+      .footer-right {
+        text-align: right;
+      }
   }
 
 
@@ -35,17 +39,34 @@ footer {
       text-align: left;
     }
 
+    svg {
+      height: 32px;
+      width: 32px;
+      padding: 0;
+      border: 2px solid $color-primary;
+      border-radius: 50%;
+
+      #Shape {
+        fill: $white;
+      }
+
+      &:hover {
+        border-color: $white;
+
+        #Shape {
+          fill: $color-primary;
+        }
+      }
+    }
+
     li {
       display: inline-block;
-      margin-right: 16px;
+      margin-right: 8px;
 
       &:last-of-type {
         margin-right: 0;
       }
 
-      &:hover {
-        transform: translateY(-4px);
-      }
     }
   }
 

@@ -45,9 +45,10 @@ header {
   position: absolute;
   top: 0;
   left: calc(50% - 20px);
-  z-index: 2;
+  z-index: 999;
 
   @media screen and (min-width: 800px) {
+    position: fixed;
     padding-left: 24px;
     top: 0;
     left: 0;

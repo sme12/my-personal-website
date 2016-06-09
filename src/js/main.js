@@ -7,8 +7,13 @@ $('header').imagesLoaded( { background: true }, function() {
 });
 
 $('.hamb').click( function() {
-  $(this).toggleClass('is-open');
+  $('.hamb').toggleClass('is-open');
   $('nav').toggleClass('is-open');
+} );
+
+$('nav ul li a').click( function() {
+  $('.hamb').removeClass('is-open');
+  $('nav').removeClass('is-open');
 } );
 
 $(function() {
