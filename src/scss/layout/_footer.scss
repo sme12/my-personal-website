@@ -74,7 +74,11 @@ footer {
   a.fork {
     color: $white;
     display: block;
-    margin: 8px auto;
+    margin: 0px auto 12px auto;
+
+    &:hover {
+      color: $color-primary;
+    }
   }
 
   .email:before,

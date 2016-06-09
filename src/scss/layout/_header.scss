@@ -14,6 +14,12 @@ header {
     text-align: left;
   }
 
+  .underline-link {
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
   .dark-wrap {
     background-color: rgba($black, .5);
   }

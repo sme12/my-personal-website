@@ -19,9 +19,16 @@ nav {
   a {
     color: $white;
     font-size: 24px;
+  }
+
+  .underline-link {
 
     &:hover {
-      color: rgba($white, .7);
+      color: $white;
+    }
+
+    &:before {
+      background-color: $white;
     }
 
 

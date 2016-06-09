@@ -7,8 +7,9 @@
 
 
   @media screen and (min-width: 800px) {
+    height: 100vh;
     background-attachment: fixed;
-    background-position: center 0px;
+    background-position: center -200px;
   }
 
   @media screen and (min-width: 1440px) {

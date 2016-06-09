@@ -58,7 +58,7 @@ h6 {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 26px;
 
   @media screen and (min-width: 480px) {
     font-size: 48px;
@@ -66,7 +66,7 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 24px;
 
   @media screen and (min-width: 480px) {
     font-size: 40px;
@@ -107,15 +107,41 @@ ul {
 }
 
 .cover {
-  background-color: $black;
-  position: absolute;
+  background-color: $color-primary;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .line-through {
   text-decoration: line-through;
+}
+
+.underline-link {
+  border-bottom: none;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    background-color: $color-primary;
+    height: 2px;
+    left: 50%;
+    top: 100%;
+    transition: all .2s ease-in-out;
+  }
+
+  &:hover {
+    &:before {
+      width: 100%;
+      left: 0;
+    }
+  }
 }
