@@ -53,7 +53,7 @@
   }
 }
 
-/* Arrow
+/* Arrow-down
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .arrow {
@@ -79,6 +79,44 @@
     left: calc(50% - 1px);
     transform-origin: left;
     transform: rotate(-45deg);
+  }
+}
+
+/* Arrow-up
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.arrow-up {
+  margin-top: 24px;
+  height: 48px;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    border-radius: 2px;
+    background-color: $color-primary;
+  }
+
+  &:before {
+    right: calc(50% - 1px);
+    transform-origin: right;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    left: calc(50% - 1px);
+    transform-origin: left;
+    transform: rotate(45deg);
+  }
+}
+
+.arrow-up:hover {
+  &:before {
+    transform: rotate(-60deg);
+  }
+  &:after {
+    transform: rotate(60deg);
   }
 }
 
@@ -120,6 +158,16 @@
     backface-visibility: hidden;
     border-radius: 2px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+  }
+
+  &:hover {
+    span:after {
+          transform: translateY(2px);
+    }
+
+    span:before {
+          transform: translateY(-2px);
+    }
   }
 
 }

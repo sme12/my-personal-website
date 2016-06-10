@@ -30,3 +30,16 @@ $(function() {
     }
   });
 });
+
+$(window).scroll(function() {
+var wScroll = $(this).scrollTop();
+
+if(wScroll > $('.about').offset().top - 2 )  {
+
+    $('.arrow-up').addClass('is-showing');
+
+    } else {
+      $('.arrow-up').removeClass('is-showing');
+    }
+
+  });
