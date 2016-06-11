@@ -113,7 +113,7 @@ a.arrow-up {
   }
 }
 
-.read-more:hover {
+.no-touch .read-more:hover {
   .arrow {
     transform: translateY(0);
     animation: none;

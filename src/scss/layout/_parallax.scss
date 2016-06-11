@@ -9,11 +9,18 @@
   @media screen and (min-width: 800px) {
     height: 100vh;
     background-attachment: fixed;
-    background-position: center -200px;
+    background-position: center -50px;
   }
 
-  @media screen and (min-width: 1440px) {
-    height: 860px;
-    background-position: center -200px;
+  // @media screen and (min-width: 1440px) {
+  //   height: 860px;
+  //   background-position: center -100px;
+  // }
+}
+
+.touch .parallax {
+  @media screen and (min-width: 800px) {
+    background-attachment:local;
+    background-position: center center;
   }
 }

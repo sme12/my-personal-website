@@ -19,21 +19,9 @@ nav {
   a {
     color: $white;
     font-size: 24px;
-  }
 
-  .underline-link {
-
-    &:hover {
-      color: $white;
-    }
-
-    &:before {
-      background-color: $white;
-    }
-
-
-    @media screen and (min-width: 800px) {
-      font-size: 40px;
+    @media screen and (min-width: 480px) {
+        font-size: 40px;
     }
   }
 
@@ -45,4 +33,20 @@ nav {
       margin-bottom: 24px;
     }
   }
+}
+
+.no-touch nav {
+
+  .underline-link {
+
+      &:hover {
+        color: $white;
+      }
+
+      &:before {
+        background-color: $white;
+      }
+
+    }
+
 }

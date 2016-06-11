@@ -60,6 +60,10 @@
   position: relative;
   margin-top: 24px;
 
+  .touch & {
+    margin-top: -24px;
+  }
+
   &:before,
   &:after {
     content: "";
@@ -81,6 +85,7 @@
     transform: rotate(-45deg);
   }
 }
+
 
 /* Arrow-up
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
